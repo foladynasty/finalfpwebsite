@@ -1,9 +1,8 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import SCFPNavigation from '@/components/scfp/SCFPNavigation';
 import SCFPHero from '@/components/scfp/SCFPHero';
 import WhySCFP from '@/components/scfp/WhySCFP';
-import SCFPModules from '@/components/scfp/SCFPModules';
+import SCFPModulesGrid from '@/components/scfp/SCFPModulesGrid';
 import SCFPEnrollment from '@/components/scfp/SCFPEnrollment';
 import SCFPInvestment from '@/components/scfp/SCFPInvestment';
 import SCFPTrainers from '@/components/scfp/SCFPTrainers';
@@ -12,16 +11,13 @@ import SCFPFinalCTA from '@/components/scfp/SCFPFinalCTA';
 
 export const metadata = {
   title: 'SCFP-HNWI Certification | Advanced Wealth Advisory | Financial Perspectives',
-  description: 'Specialist Certificate in Financial Planning for High-Net-Worth & Family Business Advisory. Singapore\'s premier advanced certification for elite wealth advisors. Launching Q1 2026.',
+  description: 'Specialist Certificate in Financial Planning for High-Net-Worth & Family Business Advisory. Singapore\'s premier advanced certification for elite wealth advisors. Launching Q2 2026.',
 };
 
 export default function SCFPPage() {
   return (
     <main className="bg-white">
       <Header />
-      
-      {/* Sticky Navigation */}
-      <SCFPNavigation />
       
       {/* Hero Section with NEW 2026 Badge */}
       <SCFPHero />
@@ -31,10 +27,8 @@ export default function SCFPPage() {
         <WhySCFP />
       </section>
       
-      {/* Section 2: Modules - Curriculum */}
-      <section id="modules" className="scroll-mt-20">
-        <SCFPModules />
-      </section>
+      {/* Section 2: Modules - Certification Curriculum (7 Modules) */}
+      <SCFPModulesGrid />
       
       {/* Section 3: Enrollment - Who Should Apply */}
       <section id="enrollment" className="scroll-mt-20">
@@ -63,4 +57,3 @@ export default function SCFPPage() {
     </main>
   );
 }
-

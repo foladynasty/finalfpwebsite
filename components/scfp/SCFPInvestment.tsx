@@ -17,51 +17,39 @@ export default function SCFPInvestment() {
               Course Fees & Funding
             </h2>
             <p className="text-xl text-slate-gray max-w-3xl mx-auto leading-relaxed">
-              Premium education for elite advisors. IBF funding available for eligible candidates.
+              Premium education for elite advisors. Contact us for detailed pricing and IBF funding information.
             </p>
           </div>
 
-          {/* Pricing Cards */}
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
-            {scfpPricing.map((tier, index) => (
-              <div
-                key={index}
-                className={`rounded-2xl p-8 border-2 transition-all hover:shadow-2xl hover:-translate-y-1 ${
-                  index === 0
-                    ? 'bg-gradient-to-br from-purple/10 to-purple/5 border-purple/40 ring-2 ring-purple/20'
-                    : 'bg-white border-purple/20'
-                }`}
-              >
-                {index === 0 && (
-                  <div className="inline-block bg-purple text-white text-xs font-bold px-3 py-1 rounded-full mb-3">
-                    RECOMMENDED
-                  </div>
-                )}
-                <h3 className="text-xl font-bold text-purple mb-2">{tier.component}</h3>
-                <p className="text-sm text-slate-gray mb-4">{tier.description}</p>
-
-                <div className="mb-4">
-                  <div className="text-sm text-slate-gray mb-1">Full Price</div>
-                  <div className="text-2xl font-bold text-charcoal line-through opacity-60">
-                    {tier.price}
-                  </div>
-                </div>
-
-                <div className="bg-gradient-to-r from-teal/10 to-teal/5 rounded-lg p-4 mb-4">
-                  <div className="text-xs font-semibold text-teal mb-1">WITH {tier.ibfFunding} IBF FUNDING</div>
-                  <div className="text-3xl font-bold text-teal">{tier.netPrice}</div>
-                  <div className="text-xs text-slate-gray mt-1">for eligible candidates</div>
-                </div>
-
-                <button className={`w-full py-3 rounded-lg font-bold transition-all ${
-                  index === 0
-                    ? 'bg-purple hover:bg-purple-700 text-white'
-                    : 'bg-purple/10 hover:bg-purple hover:text-white text-purple'
-                }`}>
-                  Register Interest
-                </button>
+          {/* Contact for Pricing Card */}
+          <div className="bg-white rounded-2xl p-12 mb-12 shadow-lg border-2 border-purple/20 text-center">
+            <div className="flex justify-center mb-6">
+              <div className="w-20 h-20 bg-purple/10 rounded-full flex items-center justify-center">
+                <DollarSign className="w-10 h-10 text-purple" />
               </div>
-            ))}
+            </div>
+            <h3 className="text-3xl font-bold text-purple mb-4">Contact Us for Course Fee & Funding Information</h3>
+            <p className="text-lg text-charcoal mb-8 max-w-2xl mx-auto">
+              Get detailed information about program fees, flexible payment plans, and IBF-STS funding assistance. Our course advisors are ready to help you plan your investment.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="https://wa.me/6581117890"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center bg-purple hover:bg-purple-700 text-white px-8 py-4 rounded-lg font-bold text-lg transition-all duration-200 hover:shadow-xl"
+              >
+                <Phone className="mr-2 w-5 h-5" />
+                WhatsApp Us: 81117890
+              </a>
+              <a
+                href="mailto:info@fp-edu.com"
+                className="inline-flex items-center justify-center border-2 border-purple text-purple hover:bg-purple hover:text-white px-8 py-4 rounded-lg font-bold text-lg transition-all duration-200"
+              >
+                Email for Details
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </a>
+            </div>
           </div>
 
           {/* What's Included */}

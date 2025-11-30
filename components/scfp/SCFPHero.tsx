@@ -1,6 +1,6 @@
 'use client';
 
-import { Sparkles, Award, Users, TrendingUp, ArrowRight, Calendar } from 'lucide-react';
+import { Sparkles, Award, Users, TrendingUp, ArrowRight, Calendar, Download } from 'lucide-react';
 
 export default function SCFPHero() {
   const scrollToOverview = () => {
@@ -58,6 +58,14 @@ export default function SCFPHero() {
               Discover the Program
               <ArrowRight className="ml-2 w-5 h-5" />
             </button>
+            <a
+              href="/brochures/scfp-full-program.pdf"
+              download
+              className="inline-flex items-center justify-center bg-white hover:bg-gray-100 text-purple px-8 py-4 rounded-lg font-bold text-lg transition-all duration-200 hover:shadow-2xl hover:scale-105"
+            >
+              <Download className="mr-2 w-5 h-5" />
+              Download Brochure
+            </a>
             <a
               href="#enrollment"
               className="inline-flex items-center justify-center bg-white/10 backdrop-blur-sm hover:bg-white/20 border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg transition-all duration-200"

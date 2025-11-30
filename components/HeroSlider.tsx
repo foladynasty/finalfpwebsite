@@ -7,52 +7,52 @@ const slides = [
   {
     id: 1,
     badge: null,
+    headline: "26 Years. 20,000+ Professionals. Your Success Partner.",
+    subheadline: "Singapore's premier financial education provider since 1999",
+    cta: "Find Your Program",
+    ctaLink: "/events",
+    bgImage: "https://images.unsplash.com/photo-1565373679540-5c2b0e8d1e95?w=1920&q=80", // Singapore cityscape at sunset
+    overlayColor: "from-logo-dark/85 to-charcoal/75",
+  },
+  {
+    id: 2,
+    badge: null,
     headline: "Your CFP® Journey Starts Here",
     subheadline: "Join 20,000+ professionals who've transformed their careers with Singapore's #1 CFP® provider",
-    cta: "Begin Your Transformation",
-    ctaLink: "#cfp-pathway",
+    cta: "Begin Your CFP® Transformation",
+    ctaLink: "/cfp",
     bgImage: "https://images.unsplash.com/photo-1525011268546-bf3f9b007f6a?w=1920&q=80", // Singapore Marina Bay skyline
     overlayColor: "from-primary/80 to-primary/60",
   },
   {
-    id: 2,
+    id: 3,
     badge: "LAUNCHING Q1 2026",
     headline: "Master HNWI Advisory. Elevate Your Practice.",
     subheadline: "Advanced certification for experienced advisors serving Singapore's wealthiest clients",
     cta: "Discover SCFP-HNWI",
-    ctaLink: "#scfp-hnwi",
+    ctaLink: "/scfp-hnwi",
     bgImage: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80", // Modern Singapore business district
     overlayColor: "from-purple/80 to-purple-800/70",
   },
   {
-    id: 3,
+    id: 4,
     badge: null,
     headline: "Sharpen Your Edge. Stay Ahead.",
     subheadline: "Practical CPD courses designed for immediate impact in your advisory practice",
     cta: "Explore CPD Courses",
-    ctaLink: "#cpd-courses",
+    ctaLink: "/cpd",
     bgImage: "https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=1920&q=80", // Professional business meeting
     overlayColor: "from-teal/80 to-teal-700/70",
   },
   {
-    id: 4,
+    id: 5,
     badge: null,
     headline: "Build a High-Performing Advisory Team",
     subheadline: "Customized corporate training solutions for financial institutions",
     cta: "Corporate Solutions",
-    ctaLink: "#corporate",
+    ctaLink: "/events",
     bgImage: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=80", // Corporate team collaboration
     overlayColor: "from-primary/85 to-primary-900/75",
-  },
-  {
-    id: 5,
-    badge: null,
-    headline: "26 Years. 20,000+ Professionals. Your Success Partner.",
-    subheadline: "Singapore's premier financial education provider since 1999",
-    cta: "Find Your Program",
-    ctaLink: "#programs",
-    bgImage: "https://images.unsplash.com/photo-1565373679540-5c2b0e8d1e95?w=1920&q=80", // Singapore cityscape at sunset
-    overlayColor: "from-logo-dark/85 to-charcoal/75",
   },
 ];
 

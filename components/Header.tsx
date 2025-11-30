@@ -160,13 +160,13 @@ export default function Header() {
                     </h3>
                     <ul className="space-y-3">
                       <li>
-                        <a href="/scfp-hnwi#overview" className="text-gray-700 hover:text-purple-600 transition-colors text-sm">
+                        <a href="/scfp-hnwi" className="text-gray-700 hover:text-purple-600 transition-colors text-sm">
                           Program Overview
                         </a>
                       </li>
                       <li>
                         <a href="/scfp-hnwi#modules" className="text-gray-700 hover:text-purple-600 transition-colors text-sm">
-                          Course Modules
+                          Certification Modules
                         </a>
                       </li>
                       <li>
@@ -176,16 +176,16 @@ export default function Header() {
                       </li>
                       <li>
                         <a href="/scfp-hnwi#investment" className="text-gray-700 hover:text-purple-600 transition-colors text-sm">
-                          Program Investment
+                          Pricing & Funding
                         </a>
                       </li>
                       <li>
                         <a href="/scfp-hnwi#faqs" className="text-gray-700 hover:text-purple-600 transition-colors text-sm">
-                          Preview Webinar
+                          FAQs
                         </a>
                       </li>
                       <li className="pt-2">
-                        <a href="/scfp-hnwi" className="inline-block bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors">
+                        <a href="https://wa.me/6581117890" target="_blank" rel="noopener noreferrer" className="inline-block bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors">
                           Register Interest
                         </a>
                       </li>
