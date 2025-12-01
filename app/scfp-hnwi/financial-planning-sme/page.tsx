@@ -8,12 +8,12 @@ export const metadata = {
 };
 
 export default function Module4Page() {
-  const module = getSCFPModuleBySlug('financial-planning-sme');
+  const moduleData = getSCFPModuleBySlug('financial-planning-sme');
   
-  if (!module) {
+  if (!moduleData) {
     notFound();
   }
 
-  return <SCFPModulePageTemplate module={module} />;
+  return <SCFPModulePageTemplate module={moduleData} />;
 }
 

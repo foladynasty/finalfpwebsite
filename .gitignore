@@ -35,4 +35,11 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# deployment folders (generated, don't need in repo)
+/static-upload/
+/plesk-upload/
+
+# large PDF files (optional - uncomment if you don't want to track them)
+# *.pdf
+
 

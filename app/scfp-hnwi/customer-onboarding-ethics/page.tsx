@@ -8,12 +8,12 @@ export const metadata = {
 };
 
 export default function Module5Page() {
-  const module = getSCFPModuleBySlug('customer-onboarding-ethics');
+  const moduleData = getSCFPModuleBySlug('customer-onboarding-ethics');
   
-  if (!module) {
+  if (!moduleData) {
     notFound();
   }
 
-  return <SCFPModulePageTemplate module={module} />;
+  return <SCFPModulePageTemplate module={moduleData} />;
 }
 

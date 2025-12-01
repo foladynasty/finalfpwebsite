@@ -8,12 +8,12 @@ export const metadata = {
 };
 
 export default function Module3Page() {
-  const module = getSCFPModuleBySlug('products-structures');
+  const moduleData = getSCFPModuleBySlug('products-structures');
   
-  if (!module) {
+  if (!moduleData) {
     notFound();
   }
 
-  return <SCFPModulePageTemplate module={module} />;
+  return <SCFPModulePageTemplate module={moduleData} />;
 }
 

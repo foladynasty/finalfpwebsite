@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { Menu, X, ChevronDown, MapPin, Clock } from 'lucide-react';
 
 export default function Header() {
@@ -28,7 +29,7 @@ export default function Header() {
           <div className="flex items-center justify-between py-3">
             {/* Logo */}
             <div className="flex items-center">
-              <a href="/">
+              <Link href="/">
                 <Image
                   src="/FP logo.png"
                   alt="Financial Perspectives"
@@ -36,7 +37,7 @@ export default function Header() {
                   height={75}
                   className="h-16 w-auto cursor-pointer"
                 />
-              </a>
+              </Link>
             </div>
             
             {/* Contact Info */}
@@ -61,9 +62,9 @@ export default function Header() {
           <div className="hidden lg:flex items-center justify-center h-16">
             {/* Desktop Navigation - Centered */}
             <nav className="flex items-center justify-center space-x-8 px-8">
-            <a href="/" className="text-white hover:text-white/80 font-medium transition-colors">
+            <Link href="/" className="text-white hover:text-white/80 font-medium transition-colors">
               Home
-            </a>
+            </Link>
             <div className="relative group">
               <button className="flex items-center space-x-1 text-white hover:text-white/80 font-medium transition-colors">
                 <span>About Us</span>
@@ -286,7 +287,7 @@ export default function Header() {
               <Menu className="w-7 h-7" />
             </button>
             
-            <a href="/">
+            <Link href="/">
               <Image
                 src="/FP logo.png"
                 alt="Financial Perspectives"
@@ -294,7 +295,7 @@ export default function Header() {
                 height={48}
                 className="h-10 w-auto brightness-0 invert cursor-pointer"
               />
-            </a>
+            </Link>
             
             {/* Empty div for balance */}
             <div className="w-11"></div>
@@ -315,7 +316,7 @@ export default function Header() {
           <div className="fixed top-0 left-0 bottom-0 w-80 bg-white shadow-2xl z-50 lg:hidden overflow-y-auto">
             {/* Menu Header */}
             <div className="bg-gold p-6 flex items-center justify-between">
-              <a href="/" onClick={() => setIsMobileMenuOpen(false)}>
+              <Link href="/" onClick={() => setIsMobileMenuOpen(false)}>
                 <Image
                   src="/FP logo.png"
                   alt="Financial Perspectives"
@@ -323,7 +324,7 @@ export default function Header() {
                   height={50}
                   className="h-10 w-auto brightness-0 invert cursor-pointer"
                 />
-              </a>
+              </Link>
               <button
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="p-2 text-white hover:text-gray-200 transition-colors"
@@ -335,13 +336,13 @@ export default function Header() {
 
             {/* Menu Items */}
             <nav className="py-6">
-              <a 
+              <Link 
                 href="/" 
                 className="block px-6 py-3 text-charcoal hover:bg-gold/10 hover:text-gold font-medium transition-colors border-l-4 border-transparent hover:border-gold"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Home
-              </a>
+              </Link>
               
               <div className="border-t border-gray-100 my-2"></div>
               

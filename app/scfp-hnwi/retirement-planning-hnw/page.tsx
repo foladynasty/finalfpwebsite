@@ -8,12 +8,12 @@ export const metadata = {
 };
 
 export default function Module6BPage() {
-  const module = getSCFPModuleBySlug('retirement-planning-hnw');
+  const moduleData = getSCFPModuleBySlug('retirement-planning-hnw');
   
-  if (!module) {
+  if (!moduleData) {
     notFound();
   }
 
-  return <SCFPModulePageTemplate module={module} />;
+  return <SCFPModulePageTemplate module={moduleData} />;
 }
 

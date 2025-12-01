@@ -8,12 +8,12 @@ export const metadata = {
 };
 
 export default function Module2Page() {
-  const module = getSCFPModuleBySlug('advising-hnw-individuals');
+  const moduleData = getSCFPModuleBySlug('advising-hnw-individuals');
   
-  if (!module) {
+  if (!moduleData) {
     notFound();
   }
 
-  return <SCFPModulePageTemplate module={module} />;
+  return <SCFPModulePageTemplate module={moduleData} />;
 }
 

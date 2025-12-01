@@ -25,23 +25,48 @@ export default function ContactForm() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission (replace with actual API call)
-    await new Promise(resolve => setTimeout(resolve, 1500));
-
-    setIsSubmitting(false);
-    setIsSubmitted(true);
-
-    // Reset form after 3 seconds
-    setTimeout(() => {
-      setIsSubmitted(false);
-      setFormData({
-        name: '',
-        email: '',
-        contactNumber: '',
-        subject: '',
-        message: ''
+    try {
+      // Submit to FormSubmit.co - Replace YOUR_EMAIL with your actual email
+      const response = await fetch('https://formsubmit.co/YOUR_EMAIL_HERE', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.contactNumber,
+          subject: formData.subject,
+          message: formData.message,
+          _subject: `New Contact Form Submission: ${formData.subject || 'General Enquiry'}`,
+          _template: 'table'
+        })
       });
-    }, 3000);
+
+      if (response.ok) {
+        setIsSubmitting(false);
+        setIsSubmitted(true);
+
+        // Reset form after 3 seconds
+        setTimeout(() => {
+          setIsSubmitted(false);
+          setFormData({
+            name: '',
+            email: '',
+            contactNumber: '',
+            subject: '',
+            message: ''
+          });
+        }, 3000);
+      } else {
+        throw new Error('Form submission failed');
+      }
+    } catch (error) {
+      console.error('Form submission error:', error);
+      alert('There was an error submitting the form. Please try again or email us directly.');
+      setIsSubmitting(false);
+    }
   };
 
   if (isSubmitted) {

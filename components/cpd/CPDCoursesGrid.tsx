@@ -1,7 +1,7 @@
 'use client';
 
 import { cpdCourses } from '@/lib/cpd-content';
-import { ArrowRight, Clock, Award, Users } from 'lucide-react';
+import { ArrowRight, Clock, Award, Users, Target, TrendingUp, Shield, Heart, BookOpen } from 'lucide-react';
 import Link from 'next/link';
 
 export default function CPDCoursesGrid() {
@@ -121,13 +121,13 @@ export default function CPDCoursesGrid() {
 }
 
 // Helper function to get the appropriate icon for each course
-function getIconComponent(courseId: string) {
-  const icons: { [key: string]: any } = {
-    mfa: require('lucide-react').Target,
-    aum: require('lucide-react').TrendingUp,
-    ilp: require('lucide-react').Shield,
-    help: require('lucide-react').Heart
+function getIconComponent(courseId: string): React.ComponentType<{ className?: string }> {
+  const icons: { [key: string]: React.ComponentType<{ className?: string }> } = {
+    mfa: Target,
+    aum: TrendingUp,
+    ilp: Shield,
+    help: Heart
   };
-  return icons[courseId] || require('lucide-react').BookOpen;
+  return icons[courseId] || BookOpen;
 }
 

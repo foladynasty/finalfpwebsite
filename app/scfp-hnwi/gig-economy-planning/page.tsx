@@ -8,12 +8,12 @@ export const metadata = {
 };
 
 export default function Module6APage() {
-  const module = getSCFPModuleBySlug('gig-economy-planning');
+  const moduleData = getSCFPModuleBySlug('gig-economy-planning');
   
-  if (!module) {
+  if (!moduleData) {
     notFound();
   }
 
-  return <SCFPModulePageTemplate module={module} />;
+  return <SCFPModulePageTemplate module={moduleData} />;
 }
 
